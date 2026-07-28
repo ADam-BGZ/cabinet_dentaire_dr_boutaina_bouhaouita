@@ -44,15 +44,14 @@ export function BeforeAfter() {
         {/* Header */}
         <div ref={header.refCallback} className={`text-center max-w-2xl mx-auto mb-20 ${header.animationClass}`}>
           <span className="text-secondary text-sm font-semibold uppercase tracking-wider">
-            Cas Cliniques du Dr. ZAHIR
+            Cas Cliniques
           </span>
           <h2 className="section-title text-foreground mt-4 mb-6">
-            Avant &amp; Après : Nos Succès
+            Avant &amp; Après : Nos Réalisations
           </h2>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Spécialisé en dentisterie esthétique et réparatrice, le Dr. ZAHIR Nabil
-            met son savoir-faire au service de votre sourire pour des résultats
-            naturels et durables.
+            Découvrez quelques résultats obtenus par le Dr. Boutaina Bouhaouita
+            — des transformations en douceur pour un sourire retrouvé.
           </p>
         </div>
 
@@ -125,7 +124,7 @@ export function BeforeAfter() {
         {/* CTA */}
         <div ref={cta.refCallback} className={`text-center ${cta.animationClass}`}>
           <a
-            href="tel:+212668142427"
+            href="tel:+212667766771"
             className="inline-flex items-center gap-2 bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base transition-all-fast hover:bg-primary/90 hover:shadow-lg min-h-[44px] text-center"
           >
             Prenez Rendez-vous pour votre consultation

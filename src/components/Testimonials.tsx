@@ -3,9 +3,52 @@
 import { StarIcon } from "@/components/icons";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
+const reviews = [
+  {
+    name: "Rahma H.",
+    rating: 5,
+    text: "Accueil chaleureux, personnel très professionnel et à l'écoute. La docteure prend le temps d'expliquer chaque étape du traitement, ce qui met vraiment en confiance. Les soins sont réalisés avec douceur et précision. J'ai particulièrement apprécié le respect des horaires et la qualité du suivi.",
+  },
+  {
+    name: "Nada B.",
+    rating: 5,
+    text: "Mon expérience avec le Dr Boutaina a été très rassurante. Elle a été à l'écoute tout au long du traitement. Je la recommande vivement.",
+  },
+  {
+    name: "Nihad B.",
+    rating: 5,
+    text: "Excellente dentiste, très professionnelle, douce et à l'écoute. Les soins sont impeccables et je me suis sentie en confiance dès le premier rendez-vous.",
+  },
+  {
+    name: "Hamza S.",
+    rating: 5,
+    text: "Excellent cabinet. L'équipe est très professionnelle, le local est propre et les équipements sont modernes.",
+  },
+  {
+    name: "Anas E.",
+    rating: 5,
+    text: "Excellente clinique avec des équipements très modernes. Ponctualité exemplaire dans les rendez-vous, pas d'attente, et accueil très professionnel.",
+  },
+  {
+    name: "Mohamed A.",
+    rating: 5,
+    text: "Professionnel et chaleureux, très bon dentiste, à l'écoute et rassurant. Le cabinet est propre, moderne et bien équipé.",
+  },
+  {
+    name: "Samir B.",
+    rating: 5,
+    text: "Le Dr Boutaina Bouhaouita est très gentille, travail de qualité, pratique très douce et à l'écoute. Étant anxieux, elle a su me mettre à l'aise.",
+  },
+  {
+    name: "Reda K.",
+    rating: 5,
+    text: "Le Dr Boutaina Bouhaouita est une praticienne très professionnelle, consciencieuse et à l'écoute. Je la recommande vivement.",
+  },
+];
+
 export function Testimonials() {
   const header = useScrollAnimation("down");
-  const card = useScrollAnimation("up");
+  const grid = useScrollAnimation("up");
   const cta = useScrollAnimation("up");
 
   return (
@@ -16,7 +59,21 @@ export function Testimonials() {
           <span className="text-secondary text-sm font-semibold uppercase tracking-wider">
             Avis Google
           </span>
-          <h2 className="section-title text-foreground mt-4 mb-6">
+
+          {/* 5.0 Rating Hero */}
+          <div className="flex items-center justify-center gap-2 mt-6 mb-2">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <StarIcon key={i} className="w-8 h-8 text-secondary" />
+            ))}
+          </div>
+          <div className="text-5xl sm:text-6xl font-bold text-primary font-heading">
+            5,0
+          </div>
+          <p className="text-muted-foreground text-base mt-2">
+            sur <strong className="text-foreground">102 avis Google</strong>
+          </p>
+
+          <h2 className="section-title text-foreground mt-8 mb-6">
             Ce que nos patients disent
           </h2>
           <p className="text-muted-foreground text-base leading-relaxed">
@@ -24,34 +81,39 @@ export function Testimonials() {
           </p>
         </div>
 
-        {/* Single Real Review */}
-        <div ref={card.refCallback} className={`max-w-2xl mx-auto mb-16 ${card.animationClass}`}>
-          <div className="bg-white rounded-2xl p-6 sm:p-10 shadow-sm hover-card border border-border/40">
-            {/* Stars */}
-            <div className="flex items-center gap-1 mb-6">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <StarIcon key={i} className="w-5 h-5 text-accent" />
-              ))}
-            </div>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              &ldquo;Consultation très professionnelle. Le Dr. ZAHIR prend le temps
-              d&apos;expliquer les soins et le cabinet est moderne et bien équipé.
-              Je recommande vivement ce cabinet.&rdquo;
-            </p>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="text-primary font-semibold text-sm">G</span>
+        {/* Reviews Grid */}
+        <div ref={grid.refCallback} className={`grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 ${grid.animationClass}`}>
+          {reviews.map((review) => (
+            <div
+              key={review.name}
+              className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover-card border border-border/40"
+            >
+              {/* Stars */}
+              <div className="flex items-center gap-1 mb-4">
+                {Array.from({ length: review.rating }).map((_, i) => (
+                  <StarIcon key={i} className="w-4 h-4 text-secondary" />
+                ))}
               </div>
-              <div>
-                <span className="font-semibold text-foreground text-sm block">
-                  Avis Google
-                </span>
-                <span className="text-xs text-muted-foreground">
-                  Patient vérifié
-                </span>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+                &ldquo;{review.text}&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary font-semibold text-xs">
+                    {review.name.charAt(0)}
+                  </span>
+                </div>
+                <div>
+                  <span className="font-semibold text-foreground text-sm block">
+                    {review.name}
+                  </span>
+                  <span className="text-xs text-muted-foreground">
+                    Patient vérifié
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
 
         {/* CTA to Google */}

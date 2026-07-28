@@ -16,9 +16,9 @@ const libreCaslon = Libre_Caslon_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Cabinet Dr. ZAHIR Nabil — Chirurgien-Dentiste à Tétouan",
+  title: "Cabinet Dentaire Dr. Boutaina Bouhaouita — Chirurgien-Dentiste à Tétouan",
   description:
-    "Cabinet de chirurgie dentaire du Dr. ZAHIR Nabil à Tétouan. Ancien médecin-chef des services sociaux militaires. Implantologie, orthodontie, esthétique, prothèses, parodontie et soins généraux.",
+    "Cabinet dentaire du Dr. Boutaina Bouhaouita à Tétouan. Soins généraux, esthétique dentaire et prothèses dans un cadre moderne et chaleureux.",
 };
 
 export default function RootLayout({

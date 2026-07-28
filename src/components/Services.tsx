@@ -10,36 +10,22 @@ const poles = [
     id: 1,
     title: "Pôle Soins Généraux",
     description:
-      "Consultations dentaires complètes, détartrage professionnel, traitement des caries et extractions dentaires. Des soins essentiels pour préserver votre capital santé bucco-dentaire.",
-    subitems: ["Consultations", "Détartrage", "Traitement des caries", "Extractions"],
+      "Consultations dentaires complètes, détartrage professionnel, traitement des caries et soins préventifs. L'essentiel pour préserver votre capital santé bucco-dentaire dans la durée.",
+    subitems: ["Consultations", "Détartrage", "Traitement des caries", "Prévention"],
   },
   {
     id: 2,
-    title: "Pôle Implantologie",
+    title: "Pôle Esthétique Dentaire",
     description:
-      "Pose d'implants dentaires de dernière génération pour remplacer une ou plusieurs dents manquantes. Des solutions durables et esthétiques pour retrouver un sourire complet.",
-    subitems: ["Implants dentaires", "Prothèses sur implants", "Solutions durables"],
+      "Blanchiment professionnel, facettes et harmonisation du sourire. Des solutions esthétiques pour révéler un sourire éclatant, tout en douceur et en précision.",
+    subitems: ["Blanchiment", "Facettes", "Harmonisation du sourire"],
   },
   {
     id: 3,
     title: "Pôle Prothèses Dentaires",
     description:
-      "Prothèses pluridisciplinaires, couronnes céramique, bridges fixes ou amovibles. Des solutions prothétiques sur mesure pour restaurer votre sourire et votre fonction masticatoire.",
+      "Couronnes céramique, bridges fixes ou amovibles. Des solutions prothétiques sur mesure pour restaurer votre sourire et votre fonction masticatoire.",
     subitems: ["Couronnes", "Bridges", "Prothèses fixes", "Prothèses amovibles"],
-  },
-  {
-    id: 4,
-    title: "Pôle Orthodontie",
-    description:
-      "Alignement dentaire pour enfants et adultes. Bagues conventionnelles et traitements correctifs pour un sourire harmonieux et une occlusion optimale.",
-    subitems: ["Alignement enfants", "Alignement adultes", "Traitement correctif"],
-  },
-  {
-    id: 5,
-    title: "Pôle Esthétique & Parodontie",
-    description:
-      "Blanchiment dentaire professionnel, facettes esthétiques et soins complets des gencives. Alliez beauté du sourire et santé parodontale pour un résultat éclatant.",
-    subitems: ["Blanchiment professionnel", "Facettes", "Soins des gencives"],
   },
 ];
 
@@ -59,8 +45,8 @@ export function Services() {
             Pôles de Soins Dentaires à Tétouan
           </h2>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Découvrez les six domaines d&apos;expertise du Dr. ZAHIR Nabil, pour une
-            prise en charge complète de votre santé bucco-dentaire.
+            Découvrez les domaines de soins proposés par le Dr. Boutaina Bouhaouita,
+            pour une prise en charge adaptée à vos besoins.
           </p>
         </div>
 
@@ -116,7 +102,7 @@ export function Services() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-md aspect-[3/4]">
               <img
                 src={`${BASE_PATH}/images/img-services-equipment.png`}
-                alt="Cabinet Dr. ZAHIR Nabil — Équipement du cabinet"
+                alt="Cabinet Dentaire Dr. Boutaina Bouhaouita"
                 className="w-full h-full object-cover"
               />
             </div>

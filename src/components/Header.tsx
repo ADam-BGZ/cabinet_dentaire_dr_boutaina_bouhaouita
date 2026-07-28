@@ -23,11 +23,11 @@ export function Header() {
           <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
             <div className="hidden sm:flex items-center gap-2">
               <ClockIcon className="w-4 h-4" />
-              <span>Lun – Ven : 09:00 – 13:00, 15:00 – 19:00 | Sam : 09:00 – 14:00</span>
+              <span>Sur rendez-vous — contactez-nous pour les horaires précis</span>
             </div>
             <div className="hidden md:flex items-center gap-2">
               <MapPinIcon className="w-4 h-4" />
-              <span>Résidence Ain Meloul, Sabbah 5, Tétouan</span>
+              <span>Bureau n°3, Résidence Cielo Azul, Av. Sidi Mohamed Al Kharaz, Tétouan</span>
             </div>
           </div>
           <div className="flex items-center gap-3 sm:gap-4">
@@ -38,11 +38,11 @@ export function Header() {
               Contactez-nous
             </a>
             <a
-              href="tel:+212668142427"
+              href="tel:+212667766771"
               className="flex items-center gap-2 hover:text-accent transition-colors"
             >
               <PhoneIcon className="w-4 h-4" />
-              <span className="font-semibold">+212 668-142427</span>
+              <span className="font-semibold">+212 667-766-771</span>
             </a>
           </div>
         </div>
@@ -56,11 +56,11 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3">
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">Z</span>
+              <span className="text-white font-bold text-lg">B</span>
             </div>
             <div className="hidden sm:block">
               <span className="font-heading text-xl font-bold text-primary block leading-tight">
-                Dr. ZAHIR Nabil
+                Dr. Boutaina Bouhaouita
               </span>
               <span className="text-[10px] text-muted-foreground tracking-wider uppercase">
                 Chirurgien-Dentiste
@@ -83,7 +83,7 @@ export function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="tel:+212668142427"
+              href="tel:+212667766771"
               className="hidden sm:flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-secondary/90 transition-colors"
             >
               Appelez
@@ -117,7 +117,7 @@ export function Header() {
                 </a>
               ))}
               <a
-                href="tel:+212668142427"
+                href="tel:+212667766771"
                 className="flex items-center justify-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-semibold text-sm"
               >
                 Prenez RDV

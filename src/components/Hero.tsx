@@ -9,42 +9,42 @@ const slides = [
     badge: "Chirurgien-Dentiste à Tétouan",
     title: (
       <>
-        Dr. ZAHIR
+        Dr. Boutaina
         <br />
-        <span className="text-secondary">Nabil</span>
+        <span className="text-secondary">Bouhaouita</span>
       </>
     ),
     description:
-      "Ancien médecin-chef des services sociaux militaires de Tétouan, le Dr. ZAHIR Nabil vous accueille dans son cabinet pour des soins dentaires d'excellence, alliant expertise et bienveillance.",
+      "Le Dr. Boutaina Bouhaouita vous accueille dans son cabinet à Tétouan pour des soins dentaires alliant douceur, professionnalisme et écoute. Une expérience de soin moderne et rassurante.",
     image: "/images/img-hero-reception.webp",
   },
   {
     badge: "Soins Dentaires Complets",
     title: (
       <>
-        Toutes les{" "}
-        <span className="text-secondary">Spécialités</span>
+        Un Accueil{" "}
+        <span className="text-secondary">Chaleureux</span>
       </>
     ),
     description:
-      "Implantologie, orthodontie, esthétique dentaire, prothèses, parodontie et soins généraux. Une prise en charge pluridisciplinaire pour toute la famille.",
+      "Soins généraux, esthétique dentaire et prothèses. Une prise en charge personnalisée dans un cadre moderne, propre et bien équipé.",
     image: "/images/bg-52.webp",
   },
   {
-    badge: "Expertise & Technologie",
+    badge: "À l'Écoute de Vos Besoins",
     title: (
       <>
         Un Sourire{" "}
-        <span className="text-secondary">d&apos;Exception</span>
+        <span className="text-secondary">en Confiance</span>
       </>
     ),
     description:
-      "Soins personnalisés dans un cadre moderne et rassurant. Le Dr. ZAHIR Nabil met son expérience au service de votre santé bucco-dentaire.",
+      "Chaque étape du traitement vous est expliquée avec clarté. Le Dr. Boutaina Bouhaouita met un point d'honneur à vous mettre à l'aise dès le premier rendez-vous.",
     image: "/images/img-20.webp",
   },
 ];
 
-const services = ["IMPLANTOLOGIE", "ORTHODONTIE", "ESTHÉTIQUE", "PROTHÈSES", "PARODONTIE", "SOINS GÉNÉRAUX"];
+const services = ["SOINS GÉNÉRAUX", "ESTHÉTIQUE DENTAIRE", "PROTHÈSES"];
 
 export function Hero() {
   const [current, setCurrent] = useState(0);
@@ -93,7 +93,7 @@ export function Hero() {
             </p>
 
             <a
-              href="tel:+212668142427"
+              href="tel:+212667766771"
               className="inline-flex items-center gap-2 bg-secondary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base transition-all-fast hover:bg-secondary/90 min-h-[44px]"
             >
               Prenez rendez-vous

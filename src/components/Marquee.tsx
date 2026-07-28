@@ -3,13 +3,12 @@
 export function Marquee() {
   // TODO: le client pourra ajouter de vrais chiffres ici (nombre de patients, années d'expérience, etc.)
   const items = [
-    "Cabinet Dr. ZAHIR Nabil",
+    "Cabinet Dentaire Dr. Boutaina Bouhaouita",
     "Chirurgien-Dentiste à Tétouan",
-    "Ancien médecin-chef des services sociaux militaires",
-    "Implantologie · Orthodontie · Esthétique · Prothèses · Parodontie · Soins Généraux",
-    "Résidence Ain Meloul, Sabbah 5, Quartier Wilaya, Tétouan",
-    "+212 668-142427",
-    "Lun – Ven : 09:00–13:00, 15:00–19:00 | Sam : 09:00–14:00",
+    "Soins Généraux · Esthétique Dentaire · Prothèses",
+    "Bureau n°3, Résidence Cielo Azul, Av. Sidi Mohamed Al Kharaz, Tétouan",
+    "+212 667-766-771",
+    "Sur rendez-vous — contactez-nous pour les horaires précis",
   ];
 
   return (

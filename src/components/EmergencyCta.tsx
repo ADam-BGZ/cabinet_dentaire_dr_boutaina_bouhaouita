@@ -23,10 +23,10 @@ export function EmergencyCta() {
               Besoin d&apos;un rendez-vous ?
             </span>
             <a
-              href="tel:+212668142427"
+              href="tel:+212667766771"
               className="block text-2xl sm:text-3xl lg:text-4xl font-bold text-white mt-4 transition-all-fast hover:text-accent break-all sm:break-normal"
             >
-              +212 668-142427
+              +212 667-766-771
             </a>
           </div>
 
@@ -36,9 +36,9 @@ export function EmergencyCta() {
               Au-Delà des Soins Dentaires
             </h2>
             <p className="text-white/80 text-sm leading-relaxed mb-4 max-w-xl">
-              Le cabinet du Dr. ZAHIR Nabil à Tétouan offre des soins dentaires
-              d&apos;exception pour patients de tous âges. De la prévention aux
-              traitements complexes, une approche globale pour votre santé
+              Le cabinet du Dr. Boutaina Bouhaouita à Tétouan offre des soins
+              dentaires de qualité pour patients de tous âges. De la prévention
+              aux soins esthétiques, une approche personnalisée pour votre santé
               bucco-dentaire.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-end gap-4 mb-6">
@@ -53,7 +53,7 @@ export function EmergencyCta() {
               ))}
             </div>
             <a
-              href="tel:+212668142427"
+              href="tel:+212667766771"
               className="inline-flex items-center gap-2 bg-accent text-foreground px-6 sm:px-8 py-3 rounded-lg font-semibold text-sm transition-all-fast hover:bg-accent/90 min-h-[44px]"
             >
               Prenez votre rendez-vous

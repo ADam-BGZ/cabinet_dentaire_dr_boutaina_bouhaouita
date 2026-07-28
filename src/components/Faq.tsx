@@ -6,24 +6,24 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const faqs = [
   {
-    question: "Comment prendre rendez-vous au cabinet du Dr. ZAHIR Nabil ?",
+    question: "Comment prendre rendez-vous au cabinet du Dr. Boutaina Bouhaouita ?",
     answer:
-      "Vous pouvez prendre rendez-vous par téléphone au +212 668-142427, via WhatsApp, ou en nous contactant directement. Les consultations se font du lundi au vendredi de 09h00 à 13h00 et de 15h00 à 19h00, et le samedi de 09h00 à 14h00.",
+      "Vous pouvez prendre rendez-vous par téléphone au +212 667-766-771, via WhatsApp, ou en nous contactant directement. Le cabinet reçoit sur rendez-vous, du lundi au samedi — contactez-nous pour les horaires précis.",
   },
   {
     question: "Quels types de soins propose le cabinet ?",
     answer:
-      "Le cabinet du Dr. ZAHIR Nabil couvre 6 domaines : soins généraux (consultations, détartrage, caries, extractions), implantologie (pose d'implants), prothèses dentaires (couronnes, bridges, fixes/amovibles), orthodontie (alignement enfants et adultes), esthétique dentaire (blanchiment professionnel, facettes) et parodontie (soins des gencives).",
+      "Le cabinet du Dr. Boutaina Bouhaouita propose des soins généraux (consultations, détartrage, caries, prévention), de l'esthétique dentaire (blanchiment professionnel, facettes) et des prothèses dentaires (couronnes, bridges, fixes et amovibles).",
   },
   {
     question: "Faut-il une ordonnance pour consulter ?",
     answer:
-      "Non, aucune ordonnance n'est nécessaire pour consulter le Dr. ZAHIR Nabil. Vous pouvez prendre rendez-vous directement par téléphone au +212 668-142427 ou via notre site. Le Dr. ZAHIR établira un plan de traitement personnalisé lors de votre première visite.",
+      "Non, aucune ordonnance n'est nécessaire pour consulter. Vous pouvez prendre rendez-vous directement par téléphone au +212 667-766-771 ou via notre site. Le Dr. Boutaina Bouhaouita établira un plan de traitement personnalisé lors de votre première visite.",
   },
   {
     question: "Acceptez-vous les enfants ?",
     answer:
-      "Absolument ! Le cabinet accueille les patients de tous les âges. Le Dr. ZAHIR Nabil offre un environnement rassurant aux plus jeunes, avec des soins préventifs et des traitements adaptés à chaque tranche d'âge.",
+      "Oui, le cabinet accueille les patients de tous les âges dans un environnement rassurant, avec des soins adaptés à chaque tranche d'âge.",
   },
   {
     question: "Quels moyens de paiement acceptez-vous ?",
@@ -31,9 +31,9 @@ const faqs = [
       "Nous acceptons les paiements en espèces, par carte bancaire et par chèque. Des facilités de paiement peuvent être proposées pour les traitements de longue durée.",
   },
   {
-    question: "Où se situe le cabinet du Dr. ZAHIR Nabil ?",
+    question: "Où se situe le cabinet du Dr. Boutaina Bouhaouita ?",
     answer:
-      "Le cabinet est situé à la Résidence Ain Meloul, Sabbah 5, Entre-étage, Appartement 2, Quartier Wilaya, Tétouan. Un parking gratuit est disponible à proximité et l'accès est facilité pour les personnes à mobilité réduite.",
+      "Le cabinet est situé au Bureau n°3, Résidence Cielo Azul, Avenue Sidi Mohamed Al Kharaz, Tétouan. Un parking est disponible à proximité et l'accès est facilité pour les personnes à mobilité réduite.",
   },
 ];
 

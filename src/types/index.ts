@@ -45,6 +45,7 @@ export interface BeforeAfterData {
 export interface StatItem {
   value: string;
   label: string;
+  badge?: string;
 }
 
 export interface StatsData {

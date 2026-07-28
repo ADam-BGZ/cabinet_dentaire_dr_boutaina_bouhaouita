@@ -6,7 +6,6 @@ import {
   ClockIcon,
 } from "@/components/icons";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { BASE_PATH } from "@/lib/utils";
 
 const quickLinks = [
   { label: "Accueil", href: "#" },
@@ -17,13 +16,13 @@ const quickLinks = [
 ];
 
 const contactItems = [
-  { icon: PhoneIcon, text: "+212 668-142427", href: "tel:+212668142427" },
+  { icon: PhoneIcon, text: "+212 667-766-771", href: "tel:+212667766771" },
   {
     icon: MapPinIcon,
-    text: "Résidence Ain Meloul, Sabbah 5, Appartement 2, Quartier Wilaya, Tétouan",
+    text: "Bureau n°3, Résidence Cielo Azul, Av. Sidi Mohamed Al Kharaz, Tétouan",
     href: "#",
   },
-  { icon: ClockIcon, text: "Lun – Ven : 09:00–13:00, 15:00–19:00 | Sam : 09:00–14:00", href: "" },
+  { icon: ClockIcon, text: "Sur rendez-vous — contactez-nous pour les horaires précis", href: "" },
 ];
 
 export function Footer() {
@@ -36,21 +35,19 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <div className="bg-white rounded-lg p-2 inline-block">
-                <img
-                  src={`${BASE_PATH}/images/logo-wilaya.png`}
-                  alt="Cabinet Dr. ZAHIR Nabil"
-                  className="h-10 w-auto"
-                />
+              <div className="bg-white rounded-lg p-4 inline-block">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">B</span>
+                </div>
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Cabinet de chirurgie dentaire à Tétouan. Soins
-              professionnels et personnalisés par le Dr. ZAHIR Nabil.
+              Cabinet dentaire à Tétouan. Soins professionnels et
+              personnalisés par le Dr. Boutaina Bouhaouita.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com"
+                href="https://instagram.com/dr.boutainabouhaouita"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center transition-all-fast hover:bg-accent hover:text-foreground"
@@ -130,7 +127,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-6 text-center">
           <p className="text-white/50 text-sm">
-            &copy; {new Date().getFullYear()} Cabinet Dr. ZAHIR Nabil. Tous droits réservés.
+            &copy; {new Date().getFullYear()} Cabinet Dentaire Dr. Boutaina Bouhaouita. Tous droits réservés.
           </p>
         </div>
       </div>

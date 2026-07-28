@@ -4,22 +4,25 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const stats = [
   {
+    value: "5,0",
+    label: "Note Google",
+    description:
+      "Une réputation d'excellence bâtie sur la confiance et la satisfaction de nos patients.",
+    badge: "⭐ 102 avis",
+  },
+  {
+    value: "—",
+    label: "Patients Satisfaits",
+    description:
+      "Chaque patient bénéficie d'une écoute attentive et de soins personnalisés.",
+    badge: "",
+  },
+  {
     value: "—",
     label: "Années d'Expérience",
     description:
-      "L'expertise du Dr. ZAHIR Nabil au service de votre santé bucco-dentaire.",
-  },
-  {
-    value: "—",
-    label: "Patients Accueillis",
-    description:
-      "Chaque patient bénéficie d'une attention personnalisée et de soins de qualité.",
-  },
-  {
-    value: "—",
-    label: "Interventions Réalisées",
-    description:
-      "Des traitements précis et réussis grâce à un savoir-faire d'excellence.",
+      "Un savoir-faire au service de votre sourire, dans un cadre moderne et chaleureux.",
+    badge: "",
   },
 ];
 
@@ -37,11 +40,11 @@ export function Stats() {
               Notre Impact
             </span>
             <h2 className="section-title text-foreground mt-4 mb-6">
-              Pourquoi choisir le Dr. ZAHIR Nabil ?
+              Pourquoi choisir le Dr. Boutaina Bouhaouita ?
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              Le Dr. ZAHIR Nabil vous accueille dans son cabinet à Tétouan pour
-              des soins dentaires d&apos;excellence, alliant expertise et bienveillance.
+              Le Dr. Boutaina Bouhaouita vous accueille à Tétouan pour des soins
+              dentaires alliant professionnalisme, douceur et bienveillance.
             </p>
           </div>
 
@@ -55,9 +58,14 @@ export function Stats() {
                 <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
                   {stat.value}
                 </div>
-                <div className="font-semibold text-foreground text-sm mb-3">
+                <div className="font-semibold text-foreground text-sm mb-1">
                   {stat.label}
                 </div>
+                {stat.badge && (
+                  <span className="inline-block bg-secondary/10 text-secondary text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mb-2">
+                    {stat.badge}
+                  </span>
+                )}
                 <p className="text-muted-foreground text-xs leading-relaxed">
                   {stat.description}
                 </p>
